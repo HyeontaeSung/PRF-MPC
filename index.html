@@ -367,18 +367,19 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+      <!--
        <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/figure1-1.png" alt="First research result visualization" loading="lazy" 
+         TODO: Replace with your research result images 
+        <img src="static/images/figure1-1.png" alt="Fig 1. Satic" loading="lazy" 
         style="max-width:70%; height:auto; margin:0 auto; display:block;" />
-        <!-- TODO: Replace with description of this result -->
+         TODO: Replace with description of this result 
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
-      </div>
+      </div>-->
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/figure2-1.png" alt="Second research result visualization" loading="lazy"
+        <img src="static/images/figure2-1.png" alt="Circular OV modeling and affine safety constraint" loading="lazy"
         style="max-width:70%; height:auto; margin:0 auto; display:block;" />
         <h2 class="subtitle has-text-centered">
           Second image description.
@@ -386,7 +387,7 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/figure3-1.png" alt="Third research result visualization" loading="lazy"
+        <img src="static/images/figure3-1.png" alt="Lane-changing scenario" loading="lazy"
         style="max-width:70%; height:auto; margin:0 auto; display:block;" />
         <h2 class="subtitle has-text-centered">
          Third image description.
@@ -394,7 +395,7 @@
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/figure4-1.png" alt="Fourth research result visualization" loading="lazy"
+      <img src="static/images/figure4-1.png" alt="Safe set inclusion and recursive feasibility" loading="lazy"
       style="max-width:70%; height:auto; margin:0 auto; display:block;" />
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -406,7 +407,58 @@
 </section>
 <!-- End image carousel -->
 
+<!-- Results -->
+<section class="section" id="results">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
 
+    <div class="content">
+      <p>
+        We evaluate the closed-loop performance of PRF-MPC against a nominal MPC baseline in a lane-change scenario under uncertain environments.
+      </p>
+    </div>
+
+    <p class="has-text-centered has-text-grey is-size-6">
+      Table 1: Simulation results.
+    </p>
+
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Planning</th>
+            <th class="has-text-right">RF Rate (%)</th>
+            <th class="has-text-right">Cost</th>
+            <th class="has-text-right">\(d_{\min}\)</th>
+            <th class="has-text-right">Comp. Time (s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nominal MPC</td>
+            <td class="has-text-right">88.2</td>
+            <td class="has-text-right">25.15</td>
+            <td class="has-text-right">4.74</td>
+            <td class="has-text-right">0.034</td>
+          </tr>
+          <tr>
+            <td><strong>PRF-MPC (ours)</strong></td>
+            <td class="has-text-right"><strong>99.2</strong></td>
+            <td class="has-text-right"><strong>69.38</strong></td>
+            <td class="has-text-right"><strong>4.95</strong></td>
+            <td class="has-text-right"><strong>0.034</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="has-text-grey is-size-7">
+      RF Rate denotes the fraction of closed-loop simulations that remain recursively feasible at every replanning step.
+      \(d_{\min}\) indicates the minimum distance to obstacles averaged over all runs.
+    </p>
+  </div>
+</section>
+<!-- End Results -->
 
 
 <!-- Youtube video 
